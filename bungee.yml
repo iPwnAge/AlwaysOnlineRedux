@@ -1,0 +1,4 @@
+name: AlwaysOnlineRedux
+version: 6.1
+main: me.johnnywoof.ao.bungee.BungeeLoader
+author: Proplex (original author Johnywoof)

@@ -31,10 +31,14 @@ public class CheckMethods {
 			return false;
 		}
 
-		Type type = new TypeToken<Map<String, String>>() {
-		}.getType();
-		Map<String, String> data = gson.fromJson(serverResponse, type);
-		return !data.containsKey("Status") || "OK".equals(data.get("Status"));
+		Type type = new TypeToken<Map<String, String>>() {}.getType();
+		try {
+			Map<String, String> data = gson.fromJson(serverResponse, type);
+			return !data.containsKey("Status") || "OK".equals(data.get("Status"));
+		} catch (IllegalStateException e) {
+			return false;
+		}
+
 
 	}
 
@@ -77,7 +81,7 @@ public class CheckMethods {
 			return false;
 		}
 
-		return new JsonParser().parse(serverResponse).getAsJsonObject().getAsJsonObject("report").getAsJsonObject("session").get("title").equals("Online")
+		return new JsonParser().parse(serverResponse).getAsJsonObject().getAsJsonObject("report").getAsJsonObject("session").get("title").equals("Online");
 
 	}
 

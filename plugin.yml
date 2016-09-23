@@ -1,7 +1,7 @@
-name: AlwaysOnline
+name: AlwaysOnlineRedux
 version: 6.1
 main: me.johnnywoof.ao.spigot.SpigotLoader
-author: Johnnywoof
+author: Proplex (original author Johnywoof)
 website: http://www.spigotmc.org/resources/alwaysonline.820/
 commands:
     alwaysonline:

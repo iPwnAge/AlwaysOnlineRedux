@@ -1,4 +1,4 @@
-AlwaysOnline
-============
+AlwaysOnlineRedux
+=================
 
-A free and better alternative to NeverDownProxy. Check http://www.spigotmc.org/resources/alwaysonline.820/ for details.
+Some minor fixes and tweaks to the AlwaysOnline plugin originally developed by Johnnywoof, specifically for the iPwnAge Network Minecraft server.
